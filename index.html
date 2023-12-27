@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+    <!--? font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!--? Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--? Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--? Favicon -->
+    <link id="favicon" rel="shortcut icon" href="assets/img/foto/khrl1.jpeg" type="image/x-png" />
+  </head>
+  <body class="hidden">
+    <!--?======================== Preloader start ========================= -->
+    <div class="preloader" id="preloader">
+      <div class="loading">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5.997cm" height="3.492cm">
+          <image
+            x="0px" 
+            y="0px"
+            width="170px"
+            height="99px"
+            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAABjCAMAAAA8T2vMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACmlBMVEUAd/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/8Ad/////9GjV3OAAAA3HRSTlMACBwtP1p1jKO4wM3W293ezL+3oItyWD0rGQcBGzdgjrvc8vz78NmJMxcKWZjO8e3JkVMnBipinvmXWyQDOXjD9XE0e/7Ecyx0wmkUQezkljVevLRRDm7PxmEJ32fSXFTQSbqsE4r68wtWopDh/dRDDcWwfGpLMCkoLkBOdtPufgTmwZU6HoCz4iXohBEPaOBSBUIVfRi99nk4y6sM17WP5yBH6x9d+KY+AoM8yGZP6SOo6thfVe96HaS59EUv0bI7ho2FIq0QY20Sx3CUqpqnvspXr6GxUBrjbEwWsFzSqgAAAAFiS0dE3XBnsyEAAAAHdElNRQfmBxUSHiVZybUEAAAE1UlEQVR42tWb/V8URRjAjxIwRZIzCDk47/B4CQUJjo4uyPBQCo3OinzBlxLBlECOKDJFsCI0jBI00RILISGzrhTf8AWsjF7svexl/5h2b+/wOGZ3n92dnbn7/rrPPPv9zM1nZ+aZOZ1OA8LuuHNaeETk9LtmzIyaFX139Kyo2TH6OffExt0bPzdBixcqwZCYZJxnMifPZ9BYUlL1aeHp91HWzIhfsDAzi4GwKPv+nFwrJc+8B2xmC0jTR37Ug/aHSGsWFD68OF+Wpo9HTEXpBEWXOGYq0vRSvHRZCRHPxEcfK1Yjyg8FU+lyrUVX2B5X7clT9oRTQ0/ryicxeXqwPPW0QRvR8mdW4RT1sHrNWg1EIyqwi3JErcM8mSWUmjUR5Vi/AeMwMGx8VjNRjqXP4TJdsklTUY7KPByim6uqNTdlmC2O51WbbtVukE4mU+UoSNxGSJSjZrMK05wXFLyx2FKdX12rxLVuu1LR+hrwS5KjXQ22eS82hr80Lenl+KZXmnY4X91p3BU5R9+8W4ZrbUurIlPnbEj2Pa+9XrTxjbYMoSwFcwvtb7bvhcrG7FNgakyRSvvWpg67cz8o2duFndveAbmWvStX9IDEj19WWdTVLS9ledfBbMByvNYhL+2h90SSHXb1HIF1ZiCGvNij0rLvfyAjZckxwTzJvUZV26MC5/EPpVyzPwKn6zshkCNFv7JfjSdP9xqXhGu0E5hq4GN0gsxdGDx5treL73Wz+kBpSpGNd58cHMIlypHUMF/M9XAcIEcE8hf5pA2np4dTJtGO7ZFM4EC0+vR0PXZRjs+yxVxrJFr3TG3iCi/QRJTFuuxzEdcB0baxU+KP2rEO0UDcXwirfilWKugMjD5zVvOK2LDwhNsp3CouYL1/7ryySUkeFy4KqV4SbDM4Mjlyei4BUY5GgZVRqlCD+MlDvPkyIVGWK1eRqnsFwvfX+UdZOsrJmbIvP4lSNaODh675B60aJSnKYmhBqLrQsWN+IbXXiXYpz9ktU1RbkIE5/kNkJ3lRlhWB67l8NyrM7bdZM+Gf7mGkB3xhx1BBCYtvB3zVSslUp8tNnfRVRZYI0yaeZw3IzY+Try/dNv3mBipicGLpWHGKpinLt95yc9048vF3E/3+PbZlvmKsXT9EXo/tC0M//dFn2q6maESCUV996aYGdXmsZKz3mtponYCCOe81/Umjgxl8tHkXYLagN9Xd5E1/PkBbRJJB/rxUH/TjVKf7xWP6K4mNiUp+4+co+l9+SayeaSylkLYHgK2eTt1AWwOA1VPtlyq4BAXDnGlMK20NAENcRXYR8Ss6ShjlOhVSx6TP76zpH7QlQOyzsJvTQ7QtQHA7/2HaEiDCKhjmT9oSMP5it6dNtCVg9DJMB20HGLeymL9DYD3F8Q/DNNJ2AKJnjoXAcpqjf4Qx0nYAMs6YM9RnIUKD2ElLULH83Ikb6rMQ4V+mirYClDHmCm0FIIbmGbQVoLgZqsVpOSwYkXnxiB7He2kbgFl9mrYBlO6rt2grQDlSSdsAjP0gbQMwji7aBmCqaP+lDEx9mqaXfHDiHlefgxA7FN++Jq8aEsU/XjXYj1L9VNX/B4MUJa20DcD0B/8ZpY//aAvACZW9KkuY+hSkCJFaFUfwn6eHoqpmt7yx8z+ECzGqLlYmwwAAAABJRU5ErkJggg=="
+          />
+        </svg>
+      </div>
+    </div>
+    <!--?======================== Preloader end ========================= -->
+
+    <!--?======================== Navbar start ========================= -->
+    <nav class="navbar">
+      <a href="/" class="logo">
+        <img src="assets/img/foto/imgkhai.jpeg" alt="logo" style="width: 40px; height: 40px" />
+        <h4>DANTEE</h4>
+      </a>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certificate">Certificate</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#viewall">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <!--?======================== Navbar end ========================= -->
+
+    <!--?======================== Home start ========================= -->
+    <section class="home" id="home">
+      <div id="particles-js"></div>
+      <div class="foto">
+        <img data-tilt data-tilt-full-page-listening src="assets/img/foto/khrl1.jpeg"  />
+      </div>
+      <div class="content">
+        <h3>
+          Hello everyone, I'm  
+        </h3>
+        <h2>Khairul Ikhwan</h2>
+        <h4>Student At Smk Wikrama Bogor</h4>
+        <p>i am into <span class="typing-text"></span></p>
+        <a href="mailto:mkhairulikhwan79@gmail.com" class="email"><span>Email Me</span> <i class=""></i>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1MTWm2GK8POdLoZPD__3bHCvp3jsj44Lg" class="cv">
+          <span>My CV</span>
+        </a>        
+        <!-- https://drive.google.com/file/d/17-LDAqtR9Ou4JzqEcbZ1H1C8wKBwgmtD/view?usp=sharing
+        https://drive.google.com/file/d/17-LDAqtR9Ou4JzqEcbZ1H1C8wKBwgmtD/view?usp=sharing -->
+      </div>
+    </section>
+    <!--?======================== Home end ========================= -->
+
+    <!--?======================== About start ========================= -->
+    <section class="about" id="about">
+      <!--? about me start -->
+      <h2 class="heading"><i class="fas fa-user-alt"></i> About Me</h2>
+      <div class="about-me">
+        <div class="foto">
+          <img data-tilt src="/assets/img/foto/khrl.jpg" alt="Erastus" />
+        </div>
+        <div class="about-desc">
+          <p>Hello everyone, My name Muhammad Khairul Ikhwan but you can call me Khairul. I am a back-end web developer who is very passionate about improving my coding skills and developing websites.</p>
+          <a href="https://drive.google.com/uc?export=download&id=1MTWm2GK8POdLoZPD__3bHCvp3jsj44Lg" class="cv">
+            <span>Download CV</span>
+          </a>                  
+        </div>
+      </div>   
+    </section>
+    <!--?======================== About enddasd ========================= -->
+    
+<section class="certificate" id="certificate">
+  <h2 class="heading"><i class="fas fa-user-alt"></i> Certificate</h2>
+  <center>
+    <div class="box-container">
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/dqlab1.png" alt="discord" />
+      </div>
+      <!--? JuiceYou -->
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/sertifcmd.png" alt="JuiceYou-Project" />
+      </div>  
+      <!--? My Bookshelfs -->
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/dqlab2.png" alt="my-bookshelfs-project" />
+      </div>
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/dqlab3.png" alt="my-bookshelfs-project" />
+      </div>
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/Sertifikat E-Learning K3.png" alt="my-bookshelfs-project" />
+      </div>
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/dqlab4.png" alt="my-bookshelfs-project" />
+      </div>
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/sertifikat dicoding-1.png" alt="my-bookshelfs-project" />
+      </div>
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/sertifikat dicoding-2.png" alt="my-bookshelfs-project" />
+      </div>
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/sertifikat dicoding-3.png" alt="my-bookshelfs-project" />
+      </div>
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/zillearn6.png" alt="my-bookshelfs-project" />
+      </div>
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/zillearn3.png" alt="my-bookshelfs-project" />
+      </div>
+      <div class="box">
+        <img draggable="false" src="/assets/img/foto/zillearn4.png" alt="my-bookshelfs-project" />
+      </div>
+    </div>
+    </center>  
+</section>
+
+    <!--?======================== Skills start ========================= -->
+    <section class="skills" id="skills">
+      <h2 class="heading"><i class="fas fa-laptop-code"></i> My Skills</h2>
+      <div class="container">
+        <div class="row" id="skillsContainer">
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="/assets/img/logo/html.png" alt="html" />
+              <span>HTML5</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="/assets/img/logo/css.png" alt="css" />
+              <span>CSS3</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="/assets/img/logo/bootstrap.png" alt="css" />
+              <span>Bootstrap</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="/assets/img/logo/js.png" alt="javascript" />
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="/assets/img/logo/php (1).png" alt="php" />
+              <span>Php</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="/assets/img/logo/laravel.png" alt="photoshop" />
+              <span>Laravel</span>
+            </div>
+          </div>
+          <div data-tilt class="bar">
+            <div class="info">
+              <img src="/assets/img/logo/mysql.png" alt="photoshop" />
+              <span>Mysql</span>
+            </div>
+          </div>
+          </div>
+        </div>     
+      </div>
+    </section>
+    <!--?======================== Skills end ========================= -->
+  <!--?======================== Project start ========================= -->
+  <section class="project" id="project">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Project</h2>
+    <div class="box-container">
+      <!--? Discord Bot -->
+      <div class="box">
+        <img draggable="false" src="/assets/img/Project/d.png" alt="discord" />
+        <div class="content">
+          <div class="tag">
+            <h3>Easy Shop</h3>
+          </div>
+          <div class="desc">
+            <p>Easy Shop is a website created for ordering shopping goods online. This website was created using HTML CSS, PHP Framework, Javascript, and MySQL database.</p>
+          </div>
+        </div>
+      </div>
+      <!--? My Bookshelfs -->
+      <div class="box">
+        <img draggable="false" src="/assets/img/Project/c.png" alt="my-bookshelfs-project" />
+        <div class="content">
+          <div class="tag">
+            <h3>Library</h3>
+          </div>
+          <div class="desc">
+            <p>The library is a website created to borrow or return student books. This website is made using bootstrap, php and mysql.</p>
+            </p>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="viewall" id="viewall">
+      <h2>Interested working with me?</h2>
+      <div>
+        <a href="/Project" class="btn more"><span>See more project</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="mailto:erastushs@gmail.com" class="btn email"><span><i class="fas fa-envelope"></i>Email Me</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--?======================== Project end ========================= -->
+
+    <!--?======================== Footer start ========================= -->
+    <footer class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>My Portofolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /></p>
+        </div>
+        <div class="box right">
+          <h3>contact info</h3>
+          <p><i class="fas fa-phone"></i>+62 821-2274-8852</p>
+          <p><i class="fas fa-envelope"></i>mkhairulikhwan79@gmail.com</p>
+          <p><i class="fas fa-map-marked-alt"></i>Bogor, Jawa Barat. Indonesia</p>
+          <div class="share">
+            <a href="https://github.com/khairull7" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+            <a href="mailto:mkhairulikhwan79@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+            <a href="https://instagram.com/khairl7_" class="fab fa-instagram" aria-label="instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/muhammad-khairul-ikhwan-0700612a3" class="fab fa-linkedin" aria-label="linkedin" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="credit">Made with <i class="fa fa-heart pulse"></i> by <a href="https://instagram.com/khairl7_"> khairl7_</a></h1>
+    </footer>
+    <!--?======================== Footer end ========================= -->
+
+    <!--?======================== Scroll Up ========================= -->
+    <a href="#home" aria-label="ScrollTop" class="fas fa-arrow-up" id="scroll-top"></a>
+    <!--?======================== Scroll Up ========================= -->
+
+    <!--? jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!--? particle.js -->
+    <script src="/assets/js/particles.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+    <!--? Tilt-Vannila.js -->
+    <script src="assets/js/vanilla-tilt.min.js"></script>
+
+    <!--? Main JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+  </body>
+</html>
