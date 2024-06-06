@@ -1,6 +1,6 @@
 ## My Portfolio Website
 
-<a href="https://erastushs.netlify.app/" target="_blank">**Visit Now** ✈️</a>
+<a href="https://khairulikhwan.netlify.app/" target="_blank">**Visit Now** ✈️</a>
 
 ## Build with
 
@@ -16,6 +16,6 @@
 - AOS
 - Font Awesome.
 
-© 2023khairul
+© 2024 MIT LISENSE
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)

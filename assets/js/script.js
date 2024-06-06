@@ -57,7 +57,7 @@ $('a[href*="#"]').on("click", function (e) {
 // typed js vanilla
 let dataTyping = {
   target: "typing-text",
-  text: '["backend development", "web development"]',
+  text: '["frontend and backend development", "web development"]',
   delay: "1000",
 };
 
