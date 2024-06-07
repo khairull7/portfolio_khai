@@ -16,6 +16,6 @@
 - AOS
 - Font Awesome.
 
-© 2024 MIT LISENSE
+© 2024 Khairul MIT LISENSE
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
